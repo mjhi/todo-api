@@ -1,8 +1,8 @@
 import express from 'express';
-import mockTasks from './data/mock.js';
 import mongoose from 'mongoose';
 import Task from './models/Task.js';
 import * as dotenv from 'dotenv';
+import cors from 'cors';
 dotenv.config();
 
 // ...
