@@ -10,6 +10,7 @@ dotenv.config();
 mongoose.connect(process.env.DATABASE_URL).then(() => console.log('Connected to DB'));
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 function asyncHandler(handler){
